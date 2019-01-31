@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
  * 1. You will be expected to get the solution to build by resolving any build errors 
  * 2. Modify the code as you see fit in either the StringExtensionsTests class or StringExtensions class
  * 3. The test names are 100% accurate for what the test SHOULD be testing. Do not change the names of the tests.
- * 4. Ask questions and interact with the interviewer. Consider if you were working on this problem together  * 
+ * 4. Ask questions and interact with the interviewer(s). 
  * 5. Tests can be run and/or debugged as you need to and ask questions if you are stuck
  */
 
@@ -56,14 +56,14 @@ namespace UnitTests
       public void D_ToInt16_Should_ReturnValidShort_GivenTestValueIsStringValue()
       {
          //Arrange
-         short expected = 42;
+         short? expected = 42;
          int testValue = 42;
 
          //Act
-         short actual = testValue.ToInt16();
+         short? actual = testValue.ToInt16();
 
          //Assert
-         Assert.AreEqual<short>(expected, actual);
+         Assert.AreEqual(expected, actual);
       }
       
       [TestMethod]
